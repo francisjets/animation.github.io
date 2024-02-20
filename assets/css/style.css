@@ -1,0 +1,166 @@
+
+
+
+@media (max-width: 576px) {
+
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+.logoimg { width: 2rem; }
+
+
+
+.grid-container{
+display: grid;
+grid-template-areas: 
+'header'
+'sidebar'
+'section'
+'main'
+'footer'
+
+}
+
+.h2{display: none;}
+.section { grid-area: section; background-color: red; }
+.header {
+grid-area: header;
+background-color: yellow;
+
+}
+.sidebar {
+grid-area: sidebar;
+background-color: pink;	padding: 2rem; border: 2rem;
+}
+.main{
+	grid-area: main;
+	background-color: orange;
+}
+.footer{
+	grid-area: footer;
+	background-color: brown;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 1rem; padding: 1rem;
+
+}
+
+.ul{ list-style: none; display: flex;justify-content: space-between;padding: 1rem;border: 1rem; }
+
+.imagen{ width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	filter: grayscale(100%);
+	-webkit-transition: all 0,3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0,3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+ }
+ .imagen:hover {
+ 	filter: grayscale(0%);
+ 	-webkit-transition: all 0,3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0,3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+ }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+
+
+
+
+	.grid-container{
+display: grid;
+grid-template-areas: 
+'header aside aside'
+'section main main'
+'section main main'
+'section main main'
+'footer main main'
+}
+.section{ grid-area: section; background-color: red; }
+.header { display:table-footer-group; flex-wrap: wrap;
+grid-area: header;
+background-color: yellow;
+
+}
+.aside {
+grid-area: aside;
+background-color: pink;	padding: 2rem;
+}
+.main{
+	grid-area: main;
+	background-color: orange;display: inline-flex;flex-direction: horizontally; 
+
+
+}
+
+.card {
+	display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 50px);
+display: inline-flex;
+}
+.footer{
+	grid-area: footer;
+	background-color: brown;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 1rem; padding: 1rem;
+
+}
+.h2{ text-align: center; }
+.ul{ list-style: none; }
+
+.imagen{ width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	filter: grayscale(100%);
+	-webkit-transition: all 0,3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0,3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+ }
+ .imagen:hover {
+ 	filter: grayscale(0%);
+ 	-webkit-transition: all 0,3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0,3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
